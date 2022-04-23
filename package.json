@@ -6,7 +6,8 @@
   "author": "BGT Nuwangi <thakshilanuwangi123@gmail.com>",
   "license": "MIT",
   "source": [
-    "src/index.html"
+    "src/index.html",
+    "src/register-members.html"
   ],
   "scripts": {
     "start": "parcel",
