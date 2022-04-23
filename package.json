@@ -1,0 +1,22 @@
+{
+  "name": "lms-front-end",
+  "version": "0.1.0",
+  "description": "LMS Front End",
+  "keywords": [],
+  "author": "BGT Nuwangi <thakshilanuwangi123@gmail.com>",
+  "license": "MIT",
+  "source": [
+    "src/index.html"
+  ],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "admin-lte": "^3.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
+}
