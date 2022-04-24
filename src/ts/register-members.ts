@@ -4,6 +4,7 @@ let txtContactNo: HTMLInputElement = document.querySelector('#txt-contact-number
 let txtAddress: HTMLInputElement = document.querySelector('#txt-address')!;
 let btnRegister: HTMLButtonElement = document.querySelector('#btn-register')!;
 let frnRegistration: HTMLFormElement = document.querySelector('#frm-register-members')!;
+let btnToast: HTMLButtonElement = document.querySelector('#btn-tst')!;
 
 frnRegistration.addEventListener('submit' , (e)=>{
     e.preventDefault();
@@ -37,6 +38,7 @@ frnRegistration.addEventListener('submit' , (e)=>{
             /*console.log(http.status);*/
             if (http.readyState === XMLHttpRequest.DONE) {
                 btnRegister.classList.remove('register');
+
                 if (http.status === 201) {
                     console.log(http.responseText);
                 } else {
