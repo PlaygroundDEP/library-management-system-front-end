@@ -2,9 +2,8 @@ let txtName: HTMLInputElement = document.querySelector('#txt-name')!;
 let txtEmail: HTMLInputElement = document.querySelector('#txt-email')!;
 let txtContactNo: HTMLInputElement = document.querySelector('#txt-contact-number')!;
 let txtAddress: HTMLInputElement = document.querySelector('#txt-address')!;
-let btnRegister: HTMLButtonElement = document.querySelector('#btn-register')!;
+let btnRegisterMember: HTMLButtonElement = document.querySelector('#btn-register')!;
 let frnRegistration: HTMLFormElement = document.querySelector('#frm-register-members')!;
-let btnToast: HTMLButtonElement = document.querySelector('#btn-tst')!;
 
 frnRegistration.addEventListener('submit' , (e)=>{
     e.preventDefault();
@@ -37,7 +36,7 @@ frnRegistration.addEventListener('submit' , (e)=>{
             // This is going to work, when the response is available
             /*console.log(http.status);*/
             if (http.readyState === XMLHttpRequest.DONE) {
-                btnRegister.classList.remove('register');
+                btnRegisterMember.classList.remove('register');
 
                 if (http.status === 201) {
                     console.log(http.responseText);
@@ -45,7 +44,7 @@ frnRegistration.addEventListener('submit' , (e)=>{
                     console.log("Failed to save the member")
                 }
             } else if (http.readyState === XMLHttpRequest.OPENED) {
-                btnRegister.classList.add('register');
+                btnRegisterMember.classList.add('register');
             }
         };
 

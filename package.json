@@ -7,7 +7,8 @@
   "license": "MIT",
   "source": [
     "src/index.html",
-    "src/register-members.html"
+    "src/register-members.html",
+    "src/register-books.html"
   ],
   "scripts": {
     "start": "parcel",
